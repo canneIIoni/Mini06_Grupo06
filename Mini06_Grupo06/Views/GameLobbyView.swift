@@ -8,11 +8,18 @@
 import SwiftUI
 
 struct GameLobbyView: View {
+    @Binding var currentDestination: NavigationDestination?
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            Text("Game Lobby View")
+            Button("Go Back to Home View") {
+                currentDestination = .home
+            }
+        }
     }
 }
 
 #Preview {
-    GameLobbyView()
+    GameLobbyView(currentDestination: .constant(.gameLobby))
 }

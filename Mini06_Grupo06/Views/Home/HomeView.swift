@@ -8,11 +8,18 @@
 import SwiftUI
 
 struct HomeView: View {
+    @Binding var currentDestination: NavigationDestination?
+
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            Text("Home View")
+            Button("Go to Detail View") {
+                currentDestination = .newSession
+            }
+        }
     }
 }
 
 #Preview {
-    HomeView()
+    HomeView(currentDestination: .constant(.home))
 }
