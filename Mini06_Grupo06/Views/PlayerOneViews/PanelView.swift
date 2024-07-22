@@ -8,11 +8,18 @@
 import SwiftUI
 
 struct PanelView: View {
+    @Binding var currentDestination: NavigationDestination?
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            Text("Panel View")
+            Button("Go Back to Home View") {
+                currentDestination = .home
+            }
+        }
     }
 }
 
 #Preview {
-    PanelView()
+    PanelView(currentDestination: .constant(.panel))
 }
