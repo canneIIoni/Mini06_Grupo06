@@ -11,7 +11,7 @@ import SwiftUI
 struct Mini06_Grupo06App: App {
     var body: some Scene {
         WindowGroup {
-            HomeView()
+            ContentView()
         }
     }
 }
