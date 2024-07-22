@@ -8,11 +8,18 @@
 import SwiftUI
 
 struct DirectorPCView: View {
+    @Binding var currentDestination: NavigationDestination?
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            Text("Director PC View")
+            Button("Go Back to Home View") {
+                currentDestination = .home
+            }
+        }
     }
 }
 
 #Preview {
-    DirectorPCView()
+    DirectorPCView(currentDestination: .constant(.directorPC))
 }
