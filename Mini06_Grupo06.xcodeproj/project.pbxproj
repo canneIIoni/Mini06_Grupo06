@@ -74,6 +74,7 @@
 		817BC3732C4EEE1700BCF379 /* DirectorPCView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirectorPCView.swift; sourceTree = "<group>"; };
 		817BC3752C4EF0B500BCF379 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		817BC3772C4EF1C800BCF379 /* NavigationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationModel.swift; sourceTree = "<group>"; };
+		817BC3792C5021C600BCF379 /* Mini06_Grupo06.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Mini06_Grupo06.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +125,7 @@
 		817BC3282C4ED7AB00BCF379 /* Mini06_Grupo06 */ = {
 			isa = PBXGroup;
 			children = (
+				817BC3792C5021C600BCF379 /* Mini06_Grupo06.entitlements */,
 				817BC3682C4EECE900BCF379 /* Views */,
 				817BC3582C4EDFDE00BCF379 /* Models */,
 				817BC3292C4ED7AB00BCF379 /* Mini06_Grupo06App.swift */,
@@ -527,6 +529,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Mini06_Grupo06/Mini06_Grupo06.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Mini06_Grupo06/Preview Content\"";
@@ -559,6 +562,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Mini06_Grupo06/Mini06_Grupo06.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Mini06_Grupo06/Preview Content\"";
