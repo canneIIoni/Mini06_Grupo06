@@ -18,6 +18,6 @@ enum NavigationDestination: Hashable {
     case panel // Electrical Panel
     
     // PLAYER TWO
-    case nerdPC
-    case directorPC
+    case nerdPC // Nerd's PC
+    case directorPC // Director's PC
 }
