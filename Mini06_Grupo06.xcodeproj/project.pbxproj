@@ -30,6 +30,7 @@
 		817BC3762C4EF0B500BCF379 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 817BC3752C4EF0B500BCF379 /* ContentView.swift */; };
 		817BC3782C4EF1C800BCF379 /* NavigationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 817BC3772C4EF1C800BCF379 /* NavigationModel.swift */; };
 		817BC37C2C5034C200BCF379 /* NerdClueView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 817BC37B2C5034C200BCF379 /* NerdClueView.swift */; };
+		81F234FA2C518649009FFF8C /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81F234F92C518649009FFF8C /* LoginView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +78,7 @@
 		817BC3772C4EF1C800BCF379 /* NavigationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationModel.swift; sourceTree = "<group>"; };
 		817BC3792C5021C600BCF379 /* Mini06_Grupo06.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Mini06_Grupo06.entitlements; sourceTree = "<group>"; };
 		817BC37B2C5034C200BCF379 /* NerdClueView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NerdClueView.swift; sourceTree = "<group>"; };
+		81F234F92C518649009FFF8C /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -218,8 +220,8 @@
 		817BC3702C4EEDBF00BCF379 /* PlayerTwoViews */ = {
 			isa = PBXGroup;
 			children = (
+				81F234F82C51862D009FFF8C /* DirectorPCViews */,
 				817BC37A2C5031DD00BCF379 /* NerdPCViews */,
-				817BC3732C4EEE1700BCF379 /* DirectorPCView.swift */,
 			);
 			path = PlayerTwoViews;
 			sourceTree = "<group>";
@@ -231,6 +233,15 @@
 				817BC37B2C5034C200BCF379 /* NerdClueView.swift */,
 			);
 			path = NerdPCViews;
+			sourceTree = "<group>";
+		};
+		81F234F82C51862D009FFF8C /* DirectorPCViews */ = {
+			isa = PBXGroup;
+			children = (
+				817BC3732C4EEE1700BCF379 /* DirectorPCView.swift */,
+				81F234F92C518649009FFF8C /* LoginView.swift */,
+			);
+			path = DirectorPCViews;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -379,6 +390,7 @@
 				817BC32A2C4ED7AB00BCF379 /* Mini06_Grupo06App.swift in Sources */,
 				817BC36A2C4EED4600BCF379 /* NewSessionView.swift in Sources */,
 				817BC3782C4EF1C800BCF379 /* NavigationModel.swift in Sources */,
+				81F234FA2C518649009FFF8C /* LoginView.swift in Sources */,
 				817BC3722C4EEDF500BCF379 /* NerdPCView.swift in Sources */,
 				817BC3572C4EDD2B00BCF379 /* HomeViewModel.swift in Sources */,
 			);
