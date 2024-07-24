@@ -12,15 +12,10 @@ struct NerdPCView: View {
     @State var showClue: Bool = false
     
     var body: some View {
-        ZStack{
-            VStack{
+        ZStack {
+            VStack {
                 HStack {
-                    //            Text("Nerd PC View")
-                    //            Button("Go Back to Home View") {
-                    //                currentDestination = .home
-                    //            }
-                    
-                    VStack{
+                    VStack {
                         RoundedRectangle(cornerRadius: 20)
                             .frame(width: 60, height: 60)
                             .padding()
@@ -32,66 +27,71 @@ struct NerdPCView: View {
                             .padding()
                     }
                     Spacer()
-                    VStack{
+                    VStack {
                         RoundedRectangle(cornerRadius: 20)
                             .frame(width: 60, height: 60)
                             .padding()
                         Button {
-                            
+                            // Add button action here
                         } label: {
                             RoundedRectangle(cornerRadius: 20)
                                 .frame(width: 60, height: 60)
                                 .padding()
                         }
                         Button {
-                            
+                            // Add button action here
                         } label: {
                             RoundedRectangle(cornerRadius: 20)
                                 .frame(width: 60, height: 60)
                                 .padding()
                         }
                     }
-                    
-                }.padding()
+                }
+                .padding()
                 Spacer()
             }
-            VStack{
+            VStack {
                 Spacer()
-                ZStack{
+                ZStack {
                     RoundedRectangle(cornerRadius: 20)
                         .frame(width: 350, height: 75)
                         .foregroundStyle(.gray)
-                    HStack{
+                    HStack {
                         Spacer()
-                        
                         RoundedRectangle(cornerRadius: 20)
                             .frame(width: 60, height: 60)
-                        
                         Spacer()
                         Button {
-                            
+                            // Add button action here
                         } label: {
                             RoundedRectangle(cornerRadius: 20)
                                 .frame(width: 60, height: 60)
                         }
                         Spacer()
                         Button {
-                            
+                            withAnimation(.easeInOut) {
+                                showClue = true
+                            }
                         } label: {
                             RoundedRectangle(cornerRadius: 20)
                                 .frame(width: 60, height: 60)
                         }
                         Spacer()
-                        
                         RoundedRectangle(cornerRadius: 20)
                             .frame(width: 60, height: 60)
-                        
                         Spacer()
-                    }.frame(width: 350)
+                    }
+                    .frame(width: 350)
                 }
             }
-            if showClue == true {
-                NerdClueView()
+            if showClue {
+                Color.black.opacity(0.7)
+                    .ignoresSafeArea()
+                    .transition(.opacity)
+                    .animation(.easeInOut, value: showClue)
+                NerdClueView(showClue: $showClue)
+                    .transition(.scale)
+                    .animation(.easeInOut, value: showClue)
             }
         }
     }
