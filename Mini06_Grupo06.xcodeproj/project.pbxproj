@@ -29,6 +29,7 @@
 		817BC3742C4EEE1700BCF379 /* DirectorPCView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 817BC3732C4EEE1700BCF379 /* DirectorPCView.swift */; };
 		817BC3762C4EF0B500BCF379 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 817BC3752C4EF0B500BCF379 /* ContentView.swift */; };
 		817BC3782C4EF1C800BCF379 /* NavigationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 817BC3772C4EF1C800BCF379 /* NavigationModel.swift */; };
+		817BC37C2C5034C200BCF379 /* NerdClueView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 817BC37B2C5034C200BCF379 /* NerdClueView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +76,7 @@
 		817BC3752C4EF0B500BCF379 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		817BC3772C4EF1C800BCF379 /* NavigationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationModel.swift; sourceTree = "<group>"; };
 		817BC3792C5021C600BCF379 /* Mini06_Grupo06.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Mini06_Grupo06.entitlements; sourceTree = "<group>"; };
+		817BC37B2C5034C200BCF379 /* NerdClueView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NerdClueView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -216,10 +218,19 @@
 		817BC3702C4EEDBF00BCF379 /* PlayerTwoViews */ = {
 			isa = PBXGroup;
 			children = (
-				817BC3712C4EEDF500BCF379 /* NerdPCView.swift */,
+				817BC37A2C5031DD00BCF379 /* NerdPCViews */,
 				817BC3732C4EEE1700BCF379 /* DirectorPCView.swift */,
 			);
 			path = PlayerTwoViews;
+			sourceTree = "<group>";
+		};
+		817BC37A2C5031DD00BCF379 /* NerdPCViews */ = {
+			isa = PBXGroup;
+			children = (
+				817BC3712C4EEDF500BCF379 /* NerdPCView.swift */,
+				817BC37B2C5034C200BCF379 /* NerdClueView.swift */,
+			);
+			path = NerdPCViews;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -354,6 +365,7 @@
 			files = (
 				817BC3602C4EE0AF00BCF379 /* WiresPuzzleModel.swift in Sources */,
 				817BC35E2C4EE08500BCF379 /* GeneratedAnswersModel.swift in Sources */,
+				817BC37C2C5034C200BCF379 /* NerdClueView.swift in Sources */,
 				817BC3762C4EF0B500BCF379 /* ContentView.swift in Sources */,
 				817BC3622C4EE0ED00BCF379 /* CircuitPuzzleModel.swift in Sources */,
 				817BC36C2C4EED5E00BCF379 /* GameLobbyView.swift in Sources */,
