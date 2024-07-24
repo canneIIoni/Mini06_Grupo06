@@ -14,7 +14,7 @@ struct HomeView: View {
         VStack {
             Text("Home View")
             Button("Go to Detail View") {
-                currentDestination = .newSession
+                currentDestination = .nerdPC
             }
         }
     }

@@ -62,7 +62,7 @@ struct NerdPCView: View {
                             .frame(width: 60, height: 60)
                         Spacer()
                         Button {
-                            // Add button action here
+                            currentDestination = .directorPC
                         } label: {
                             RoundedRectangle(cornerRadius: 20)
                                 .frame(width: 60, height: 60)
